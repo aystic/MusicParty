@@ -19,9 +19,3 @@ A simple stateless microservice for a Music app. The Music app allows listeners 
 ![Data Model of the API](Data-Model.png "Data Model of the API")
 
 ---
-
-Deployed on Heroku @ **https://music-party-sahilsharma.herokuapp.com/**
-
-The API documentation is available @ **https://documenter.getpostman.com/view/21393025/2s847ESEHA**
-
----
