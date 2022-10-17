@@ -19,3 +19,7 @@ A simple stateless microservice for a Music app. The Music app allows listeners 
 ![Data Model of the API](Data-Model.png "Data Model of the API")
 
 ---
+
+App is up and running on heroku : **https://music-party-aystic.herokuapp.com/check-health**
+
+---
