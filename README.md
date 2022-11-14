@@ -20,6 +20,8 @@ A simple stateless microservice for a Music app. The Music app allows listeners 
 
 ---
 
-App is up and running on heroku : **https://music-party-aystic.herokuapp.com/check-health**
+App is up and running on heroku : **https://music-party-aystic.herokuapp.com**
+
+Check the API Documentation : **https://documenter.getpostman.com/view/21393025/2s8YmEy66G**
 
 ---
