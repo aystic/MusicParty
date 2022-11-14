@@ -54,6 +54,6 @@ Router.post(
   commonControllers.vote
 );
 
-Router.get("/liked-songs", commonControllers.getLikedSongs);
+	Router.get("/liked-songs", commonControllers.getLikedSongs);
 
 module.exports = Router;

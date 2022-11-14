@@ -71,7 +71,7 @@ exports.vote = async (req, res, next) => {
         result = await rating.save();
       } else {
         if (response.vote !== vote) {
-          result = await Rating.where({ _id: response.id }).update({ vote });
+          await Rating.where({ _id: response.id }).updateOne({ vote });
         }
       }
       if (!result) {

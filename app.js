@@ -51,13 +51,12 @@ app.use(
 );
 
 //Routes
-app.get("/check-health", (req, res, next) => {
-  res.status(200).json({ message: "App is up and running!" });
-});
 app.use("/auth", authRoutes); //login routes
 app.use("/admin", isAuth, isAdmin, adminRoutes);
-app.use("/", isAuth, utilityRoutes);
-
+app.use("/", utilityRoutes);
+app.use("*",(req, res, next) => {
+  res.status(404).sendFile(path.join(__dirname, "public/404.html"));
+});
 //global error handler
 app.use((error, req, res, next) => {
   console.error(error);
