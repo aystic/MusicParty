@@ -19,6 +19,7 @@ app.use(bodyParser.json());
 
 //statically serving the music folder
 app.use("/music", express.static(path.join(__dirname, "music")));
+app.use(express.static(path.join(__dirname, "public")));
 
 //allowing cross origin sharing
 app.use((req, res, next) => {
@@ -54,7 +55,7 @@ app.use(
 app.use("/auth", authRoutes); //login routes
 app.use("/admin", isAuth, isAdmin, adminRoutes);
 app.use("/", utilityRoutes);
-app.use("*",(req, res, next) => {
+app.use("*", (req, res, next) => {
   res.status(404).sendFile(path.join(__dirname, "public/404.html"));
 });
 //global error handler
